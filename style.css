@@ -4,17 +4,22 @@
 /* Estilos generales y Fondo */
 body {
     font-family: 'Fira Sans', sans-serif;
-    /* Capa 1: Degradado (de gris tenue a negro sólido a los 350px) 
-       Capa 2: Imagen del mapa del CMB (usando el del satélite Planck como ejemplo) */
-    background: 
-        linear-gradient(to bottom, rgba(80, 80, 80, 0.5) 0%, rgba(15, 15, 15, 1) 350px),
-        url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Planck_satellite_cmb.jpg/1200px-Planck_satellite_cmb.jpg') no-repeat center top;
-    background-size: 50% auto; /* Ajusta la imagen al ancho de la pantalla */
-    background-color: #0f0f0f; /* Color base por si la imagen tarda en cargar */
-    color: #e0e0e0; /* Letras claras (gris muy claro, cansa menos la vista que el blanco puro) */
+    background-color: #0f0f0f; /* Fondo totalmente oscuro para toda la página */
+    color: #e0e0e0; /* Letras claras */
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+/* =========================================
+   ESTA ES LA CENEFA DE CABECERA
+   ========================================= */
+.header-image {
+    width: 100%;
+    height: 250px; /* Aquí controlas el grosor de la cenefa (cámbialo si la quieres más ancha o delgada) */
+    object-fit: cover; /* El secreto: recorta la imagen perfectamente sin deformarla */
+    opacity: 0.8; /* Un poco de transparencia para que no brille tanto frente al fondo oscuro */
+    display: block;
 }
 
 .container {
@@ -22,8 +27,6 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    /* Añadimos un poco de espacio arriba para que el fondo del CMB se aprecie bien */
-    /* padding-top: 80px;  */
 }
 
 /* =========================================
@@ -53,7 +56,7 @@ nav ul li a {
     background-color: rgba(255, 255, 255, 0.1); /* Blanco al 10% de opacidad */
     padding: 12px 24px;
     border-radius: 6px; /* Bordes redondeados */
-    backdrop-filter: blur(4px); /* Difumina ligeramente lo que hay detrás del botón */
+    backdrop-filter: blur(4px); /* Efecto cristal */
     
     /* Transición suave para el hover */
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -77,7 +80,7 @@ nav ul li a.activo {
 section {
     margin-bottom: 60px;
     padding-bottom: 40px;
-    /* border-bottom: 1px dashed #333333; /* Línea divisoria ahora más oscura */ */
+    border-bottom: 1px dashed #333333; /* Línea divisoria muy sutil */
 }
 
 h1, h2, h3 {
@@ -95,5 +98,5 @@ p {
 footer {
     margin-top: 40px;
     font-size: 0.8em;
-    color: #777777; /* Texto del pie de página oscuro pero legible */
+    color: #777777;
 }
