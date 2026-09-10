@@ -33,7 +33,7 @@ body {
    Estilos del menú (Botones translúcidos)
    ========================================= */
 nav {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 nav ul {
@@ -80,7 +80,7 @@ nav ul li a.activo {
 section {
     margin-bottom: 60px;
     padding-bottom: 40px;
-    border-bottom: 1px dashed #333333; /* Línea divisoria muy sutil */
+    /* border-bottom: 1px dashed #333333; /* Línea divisoria muy sutil */ */
 }
 
 h1, h2, h3 {
