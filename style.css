@@ -26,12 +26,12 @@ body {
     margin-bottom: 20px;
 }
 
-nav {
+/* nav {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     padding: 15px 0;
     margin-bottom: 40px;
-}
+} */
 
 nav ul {
     list-style-type: none;
